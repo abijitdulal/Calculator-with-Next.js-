@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e8edf5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator container */
+.calculator {
+  background-color: #1e293b;
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Display screen */
+.display {
+  background-color: #111827;
+  color: white;
+  padding: 20px;
+  height: 100px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Previous number */
+.previous-operand {
+  color: #9ca3af;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Current number */
+.current-operand {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Buttons container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* All buttons */
+.buttons button {
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  background-color: #334155;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Button hover */
+.buttons button:hover {
+  background-color: #475569;
+}
+
+/* Operator buttons */
+.buttons .operator {
+  background-color: #f59e0b;
+  color: white;
+}
+
+/* Operator hover */
+.buttons .operator:hover {
+  background-color: #d97706;
+}
+
+/* Zero button */
+.buttons .zero {
+  grid-column: span 2;
+}
+
+/* Equal button */
+.buttons .equal {
+  background-color: #10b981;
+}
+
+/* Equal hover */
+.buttons .equal:hover {
+  background-color: #059669;
+}
